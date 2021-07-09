@@ -18,3 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('obtener/generos', [ApiController::class,'obtenerGeneros'])->name("obtener.generos");
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
